@@ -1,0 +1,260 @@
+
+
+@media (max-width: 767px){
+  .logo {
+    position: absolute;
+  }
+  main nav ul li {
+  	display: block;
+    margin: 1rem;
+  }
+  .article {
+    flex-direction: column;
+  }
+
+  .image-article {
+    text-align: center;
+  }
+
+  .content {
+    height: 23rem;
+  }
+}
+@media (min-width: 768px){
+  .logo {
+    position: fixed;
+    z-index: 2000;
+  }
+  main nav ul li {
+  	display: inline-block;
+  }
+
+  .image-article {
+    text-align: center;
+  }
+}
+
+@media (min-width:1024px) {
+  main nav ul li a:hover {
+  	color: #FFF;
+  	background-color: #635756;
+  }
+
+  .navigation button:hover {
+  	cursor: pointer;
+  	background-color: rgba(99, 87, 86, 1);
+  }
+
+}
+
+
+body, p, h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5rem;
+}
+
+body {
+	background-image: url('../images/background.png');
+  overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	top: 0;
+	left: 3em;
+}
+
+
+main .menu {
+	text-align: center;
+	margin: 2rem 0 3rem 0;
+	text-transform: uppercase;
+	min-width: 70rem;
+}
+
+
+main nav ul li a {
+	font-family: 'Drive';
+	border-radius: 3px;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	font-size: 0.9em;
+	margin: 0.3rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #635756;
+	transition: 0.2s;
+}
+
+
+
+main .article {
+	position: relative;
+	width: 69rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 4rem;
+	-moz-box-shadow: 1px 0px 5px 0px #656565;
+	-webkit-box-shadow: 1px 0px 5px 0px #656565;
+	-o-box-shadow: 1px 0px 5px 0px #656565;
+	box-shadow: 0px 0px 10px 0px #656565;
+}
+
+.image-article img {
+	width: 30rem;
+	height: 100%;
+}
+
+.content {
+	position: relative;
+	padding: 1rem 3rem 1.5rem 3rem;
+	background-color: #FFF;
+	font-family: 'WeDrive';
+	color: #635756;
+	max-width: 70rem;
+}
+
+.date {
+	position: absolute;
+	right: 1.5rem;
+	text-transform: uppercase;
+}
+
+.content h1 {
+	font-family: 'Drive';
+	margin-top: 5rem;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	line-height: 2.2rem;
+	font-size: 2.5rem;
+}
+
+.content p {
+	line-height: 1.8rem;
+	overflow-y: hidden;
+}
+
+.category p {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: -0.1 0.1rem;
+	font-size: 0.9rem;
+	background-color: rgba(99, 87, 86, 0.1)
+}
+
+.category {
+	position: absolute;
+	bottom: 0.5rem;
+}
+
+.social-logos {
+	position: absolute;
+	right: 1.5rem;
+	bottom: 1rem;
+	width: 4.5rem;
+	margin: 0rem;
+}
+
+.article div .social-logos img {
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 1.8rem;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: 0.2s;
+}
+
+.article div .social-logos img:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.red-triangle {
+	position: absolute;
+	margin: 0 auto;
+	background: url('../images/pink-triangle.png') repeat-x;
+	height: 2rem;
+	width: 69rem;
+	z-index: 1;
+	bottom: -2rem;
+}
+
+.blue-triangle {
+	position: absolute;
+	margin: 0 auto;
+	background: url('../images/blue-triangle.png') repeat-x;
+	height: 2rem;
+	width: 69rem;
+	z-index: 1;
+	bottom: -2rem;
+}
+
+.navigation {
+  display: block;
+	text-align: center;
+  width: 100%;
+  margin: 3rem 0 3rem 0;
+}
+
+.navigation button {
+	width: 6rem;
+	height: 2rem;
+	border: none;
+	background-color: rgba(99, 87, 86, 0.6);
+	color: #FFF;
+	text-transform: uppercase;
+	margin: 0.4rem;
+	border-radius: 0.1rem;
+	font-family: 'WeDrive';
+	font-weight: 800;
+	transition: 0.2s;
+}
+
+
+
+footer {
+	border-top: 1px solid rgba(99, 87, 86, 0.6);
+	padding-top: 0.3rem;
+	width: 67rem;
+	height: 5rem;
+	display: flex;
+  text-align: center;
+	justify-content: space-between;
+	font-family: 'WeDrive';
+	font-size: 0.8rem;
+}
+
+footer .nav-footer {
+	margin-top: -0.8rem;
+}
+
+footer .nav-footer ul li {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+footer .nav-footer ul li a {
+	color: rgba(99, 87, 86, 1);
+	transition: 0.2s;
+}
+
+footer .nav-footer ul li a:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+footer .copyrights {
+	margin-top: 0.3rem;
+	line-height: 0.3rem;
+}
+
+footer .copyrights span {
+	color: rgba(99, 87, 86, 1);
+	font-weight: 800;
+}
+
+footer .copyrights p {
+	text-align: right;
+	font-size: 0.7rem;
+	opacity: 0.4;
+}
